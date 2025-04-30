@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>İletişim - Gümüşhane Üniversitesi Kütüphanesi</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(to right, #1a2b5c, #2b3c6e);
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+    header img {
+      height: 60px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+      text-align: center;
+      flex-grow: 1;
+    }
+    nav {
+      background-color: #2b3c6e;
+      padding: 1rem 0;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      padding: 3rem;
+      max-width: 800px;
+      margin: auto;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      color: #2b3c6e;
+      margin-bottom: 1.5rem;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    label {
+      font-weight: bold;
+      margin-bottom: 0.25rem;
+    }
+    input, textarea {
+      padding: 0.75rem;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+      width: 100%;
+    }
+    textarea {
+      resize: vertical;
+      min-height: 150px;
+    }
+    button {
+      background-color: #2b3c6e;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      padding: 1rem;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #1a2b5c;
+    }
+    .info {
+      margin-top: 2rem;
+    }
+    .info p {
+      margin: 0.5rem 0;
+    }
+    footer {
+      background-color: #2b3c6e;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://yoksis.yok.gov.tr/images/logo.zul?universiteId=113023.png" alt="Gümüşhane Üniversitesi Sol Logo">
+    <h1>Gümüşhane Üniversitesi Kütüphane ve Dokümantasyon Daire Başkanlığı</h1>
+    <img src="https://yoksis.yok.gov.tr/images/logo.zul?universiteId=113023.png" alt="Gümüşhane Üniversitesi Sağ Logo">
+  </header>
+
+
+  <main>
+    <form class="login-form">
+      <h2>Giriş Yap</h2>
+      <label for="email">E-Posta</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="password">Şifre</label>
+      <input type="password" id="password" name="password" required>
+
+      <button type="submit">Giriş Yap</button>
+      <p>Şifrenizi mi unuttunuz? <a href="sifre_yenile.html">Şifreyi Yenile</a></p>
+      <p>Hesabınız yok mu? <a href="uye_ol.html">Kayıt Ol</a></p>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Gümüşhane Üniversitesi</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kitaplar - Gümüşhane Üniversitesi Kütüphanesi</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(to right, #1a2b5c, #2b3c6e);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    nav {
+      background-color: #2b3c6e;
+      padding: 1rem 0;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      padding: 3rem;
+      max-width: 1200px;
+      margin: auto;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      color: #2b3c6e;
+      margin-bottom: 1rem;
+    }
+    .book-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+    .book-card {
+      background-color: #fff;
+      padding: 1rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      width: 200px;
+      transition: transform 0.2s;
+    }
+    .book-card:hover {
+      transform: translateY(-5px);
+    }
+    .book-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+      margin-bottom: 0.5rem;
+    }
+    .book-card h4 {
+      margin: 0.5rem 0 0.25rem;
+      color: #1a2b5c;
+    }
+    .book-card p {
+      margin: 0;
+      color: #555;
+      font-size: 0.9rem;
+    }
+    footer {
+      background-color: #2b3c6e;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Gümüşhane Üniversitesi Kütüphane ve Dokümantasyon Daire Başkanlığı</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Ana Sayfa</a>
+    <a href="kutuphane_hesabım.html">Kütüphane Hesabım</a>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Dünya Klasikleri</h2>
+      <div class="book-grid">
+        <div class="book-card">
+          <img src="https://static.ticimax.cloud/41831/uploads/urunresimleri/buyuk/suc-ve-ceza-fyodor-dostoyevski-kalitel-599326.png" alt="Suç ve Ceza">
+          <h4>Suç ve Ceza</h4>
+          <p>Fyodor Dostoyevski</p>
+        </div>
+        <div class="book-card">
+          <img src="https://th.bing.com/th/id/OIP.Ow_qNhF7f8sZamEidrBEVAHaLo?rs=1&pid=ImgDetMain" alt="Sefiller">
+          <h4>Sefiller</h4>
+          <p>Victor Hugo</p>
+        </div>
+        <div class="book-card">
+          <img src="https://th.bing.com/th/id/OIP.cgZJuFoY27l1ZpQJHA72yQHaLh?rs=1&pid=ImgDetMain" alt="Anna Karenina">
+          <h4>Anna Karenina</h4>
+          <p>Lev Tolstoy</p>
+        </div>
+      </div>
+    </section>
+
+    <section style="margin-top: 3rem;">
+      <h2>Türk Klasikleri</h2>
+      <div class="book-grid">
+        <div class="book-card">
+          <img src="https://th.bing.com/th/id/OIP.fPbkdgKlfj6JJu4MyeIT7QAAAA?pid=ImgDet&w=206&h=303&c=7&dpr=1,1" alt="Çalıkuşu">
+          <h4>Çalıkuşu</h4>
+          <p>Reşat Nuri Güntekin</p>
+        </div>
+        <div class="book-card">
+          <img src="https://th.bing.com/th/id/R.fbb27392f9be7c781c18421077464dbe?rik=W4A%2bgUC%2fY0k7Kg&pid=ImgRaw&r=0" alt="Kuyucaklı Yusuf">
+          <h4>Kuyucaklı Yusuf</h4>
+          <p>Sabahattin Ali</p>
+        </div>
+        <div class="book-card">
+          <img src="https://th.bing.com/th/id/OIP.mjusk0dzmpEsXP8KeQkvTQHaK5?rs=1&pid=ImgDetMain" alt="Sinekli Bakkal">
+          <h4>Sinekli Bakkal</h4>
+          <p>Halide Edib Adıvar</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Gümüşhane Üniversitesi</p>
+  </footer>
+
+</body>
+</html>

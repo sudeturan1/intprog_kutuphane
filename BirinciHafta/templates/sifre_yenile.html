@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Şifre Yenileme - Gümüşhane Üniversitesi Kütüphanesi</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(to right, #1a2b5c, #2b3c6e);
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+    header img {
+      height: 60px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.5rem;
+      text-align: center;
+      flex-grow: 1;
+    }
+    nav {
+      background-color: #2b3c6e;
+      padding: 1rem 0;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      padding: 3rem;
+      max-width: 600px;
+      margin: auto;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      color: #2b3c6e;
+      margin-bottom: 1.5rem;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    label {
+      font-weight: bold;
+    }
+    input {
+      padding: 0.75rem;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+      width: 100%;
+    }
+    button {
+      background-color: #2b3c6e;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      padding: 1rem;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #1a2b5c;
+    }
+    footer {
+      background-color: #2b3c6e;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://yoksis.yok.gov.tr/images/logo.zul?universiteId=113023" alt="Gümüşhane Üniversitesi Sol Logo">
+    <h1>Gümüşhane Üniversitesi Kütüphane ve Dokümantasyon Daire Başkanlığı</h1>
+    <img src="https://yoksis.yok.gov.tr/images/logo.zul?universiteId=113023" alt="Gümüşhane Üniversitesi Sağ Logo">
+  </header>
+
+  <nav>
+    <a href="index.html">Ana Sayfa</a>
+    <a href="kutuphane_hesabım.html">Kütüphane Hesabım</a>
+    <a href="iletisim.html">İletişim</a>
+  </nav>
+
+  <main>
+    <h2>Şifre Yenileme</h2>
+    <form>
+      <label for="email">E-posta Adresiniz</label>
+      <input type="email" id="email" name="email" required placeholder="ornek@gumushane.edu.tr">
+
+      <label for="new-password">Yeni Şifre</label>
+      <input type="password" id="new-password" name="new-password" required>
+
+      <label for="confirm-password">Yeni Şifre (Tekrar)</label>
+      <input type="password" id="confirm-password" name="confirm-password" required>
+
+      <button type="submit">Şifremi Yenile</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Gümüşhane Üniversitesi</p>
+  </footer>
+</body>
+</html>

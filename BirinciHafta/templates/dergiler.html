@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dergiler - Gümüşhane Üniversitesi Kütüphanesi</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(to right, #1a2b5c, #2b3c6e);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    nav {
+      background-color: #2b3c6e;
+      padding: 1rem 0;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      padding: 3rem;
+      max-width: 1200px;
+      margin: auto;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      color: #2b3c6e;
+      margin-bottom: 1rem;
+    }
+    .magazine-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+    .magazine-card {
+      background-color: #fff;
+      padding: 1rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      width: 200px;
+      transition: transform 0.2s;
+    }
+    .magazine-card:hover {
+      transform: translateY(-5px);
+    }
+    .magazine-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+      margin-bottom: 0.5rem;
+    }
+    .magazine-card h4 {
+      margin: 0.5rem 0 0.25rem;
+      color: #1a2b5c;
+    }
+    .magazine-card p {
+      margin: 0;
+      color: #555;
+      font-size: 0.9rem;
+    }
+    footer {
+      background-color: #2b3c6e;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Gümüşhane Üniversitesi Kütüphane ve Dokümantasyon Daire Başkanlığı</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Ana Sayfa</a>
+    <a href="kutuphane_hesabım.html">Kütüphane Hesabım</a>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Bilimsel Dergiler</h2>
+      <div class="magazine-grid">
+        <div class="magazine-card">
+          <img src="https://dergipark.org.tr/media/cache/journal_croped/77dd/be50/b791/5c5a8a563533f.jpeg" alt="DergiPark">
+          <h4>DergiPark Akademik</h4>
+          <p>Türkiye'deki akademik dergileri barındıran bir platform.</p>
+        </div>
+        <div class="magazine-card">
+          <img src="https://th.bing.com/th/id/OIP.ud5KhuKqURMCm9kCTp_bVgHaKw?rs=1&pid=ImgDetMain" alt="Bilim ve Teknik">
+          <h4>Bilim ve Teknik</h4>
+          <p>TÜBİTAK tarafından yayınlanan aylık bilim dergisi.</p>
+        </div>
+      </div>
+    </section>
+
+    <section style="margin-top: 3rem;">
+      <h2>Edebiyat Dergileri</h2>
+      <div class="magazine-grid">
+        <div class="magazine-card">
+          <img src="https://th.bing.com/th/id/OIP.PCkbveWH5hiNO8NDrNzeGAHaKY?rs=1&pid=ImgDetMain" alt="Türk Edebiyatı Dergisi">
+          <h4>Türk Edebiyatı</h4>
+          <p>1972'den bu yana yayın yapan edebiyat dergisi.</p>
+        </div>
+        <div class="magazine-card">
+          <img src="https://th.bing.com/th/id/OIP.c-bPdTHjsqBM0UzXOqZjmwHaLL?rs=1&pid=ImgDetMain" alt="Hece Dergisi">
+          <h4>Hece Dergisi</h4>
+          <p>Modern Türk şiiri ve deneme alanında önemli bir dergi.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Gümüşhane Üniversitesi</p>
+  </footer>
+
+</body>
+</html>
+

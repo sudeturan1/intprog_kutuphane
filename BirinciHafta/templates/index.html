@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gümüşhane Üniversitesi Kütüphanesi</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background-color: #e6ecf2;
+      color: #222;
+    }
+    header {
+      background: linear-gradient(to right, #1a2b5c, #2b3c6e);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    header h1 {
+      flex: 1 1 auto;
+      text-align: center;
+    }
+    header img.logo {
+      height: 80px;
+      width: auto;
+    }
+    nav {
+      background-color: #2b3c6e;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      position: relative;
+    }
+    nav .dropdown {
+      position: relative;
+    }
+    nav a, nav .dropbtn {
+      display: block;
+      padding: 1rem 1.5rem;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    nav a:hover, nav .dropbtn:hover {
+      background-color: #3d4e8c;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #3d4e8c;
+      min-width: 200px;
+      z-index: 1;
+      top: 100%;
+      left: 0;
+    }
+    .dropdown-content a {
+      padding: 1rem;
+      display: block;
+      color: white;
+      text-decoration: none;
+    }
+    .dropdown-content a:hover {
+      background-color: #4e60a3;
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    main {
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .search-grid {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .search-section {
+      background-color: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+      flex: 1 1 40%;
+      min-width: 300px;
+    }
+    .search-section:hover {
+      transform: translateY(-5px);
+    }
+    .search-section h2 {
+      margin-top: 0;
+      color: #2b3c6e;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      margin-top: 0.5rem;
+      font-size: 1rem;
+    }
+    button {
+      padding: 0.75rem 1.5rem;
+      background-color: #2b3c6e;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      margin-top: 1rem;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #1a2b5c;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 1rem;
+      border-radius: 8px;
+    }
+    .footer {
+      background-color: #2b3c6e;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img class="logo" src="https://yoksis.yok.gov.tr/images/logo.zul?universiteId=113023.png" alt="Gümüşhane Üniversitesi Logosu">
+    <h1>Gümüşhane Üniversitesi Kütüphane ve Dokümantasyon Daire Başkanlığı</h1>
+    <img class="logo" src="https://yoksis.yok.gov.tr/images/logo.zul?universiteId=113023.png" alt="Gümüşhane Üniversitesi Logosu">
+  </header>
+
+  <nav>
+    <div class="dropdown">
+        <div class="dropbtn">Kütüphane Hesabım</div>
+        <div class="dropdown-content">
+          <a href="uye_ol.html">Üye Ol</a>
+          <a href="giris_yap.html">Giriş Yap</a>
+          <a href="kutuphane_hesabım.html">Hesap Bilgileri</a>
+        </div>
+      </div>
+    <div class="dropdown">
+      <div class="dropbtn">Hakkımızda</div>
+      <div class="dropdown-content">
+        <a href="misyon_vizyon.html">Misyon & Vizyon</a>
+        <a href="personel.html">Personel</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <div class="dropbtn">Katalog</div>
+      <div class="dropdown-content">
+        <a href="kitaplar.html">Kitaplar</a>
+        <a href="dergiler.html">Dergiler</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <div class="dropbtn">E-Kaynaklar</div>
+      <div class="dropdown-content">
+        <a href="veritabanlari.html">Veritabanları</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <div class="dropbtn">Sanal Kütüphane</div>
+      <div class="dropdown-content">
+        <a href="dijital_arsiv.html">Dijital Arşiv</a>
+        <a href="video_egitimler.html">Video Eğitimler</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <div class="dropbtn">Eğitim</div>
+      <div class="dropdown-content">
+        <a href="kullanici_egitimleri.html">Kullanıcı Eğitimleri</a>
+        <a href="etkinlikler.html">Etkinlikler</a>
+      </div>
+    </div>
+    <a href="iletisim.html">İletişim</a>
+  </nav>
+
+  <main>
+    <div class="search-grid">
+      <section class="search-section">
+        <h2>Kaynak Arama</h2>
+        <input type="text" placeholder="Milyonlarca yayında arayın...">
+        <button>Ara</button>
+      </section>
+
+      <section class="search-section">
+        <h2>Hizmet Anketi</h2>
+        <p>Anketimize katılarak görüşlerinizi bizimle paylaşabilirsiniz.</p>
+        <a href="https://docs.google.com/forms" target="_blank">
+          <button>Anketi Görüntüle</button>
+        </a>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Gümüşhane Üniversitesi</p>
+  </footer>
+</body>
+</html>

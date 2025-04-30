@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Melike Kütüphanesi - Danışma</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f4f8;
+      color: #333;
+    }
+
+    header {
+      background-color: #003B5C;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    nav {
+      background-color: #005b88;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      position: relative;
+    }
+
+    nav ul li a {
+      display: block;
+      color: white;
+      padding: 15px 20px;
+      text-decoration: none;
+    }
+
+    nav ul li:hover {
+      background-color: #004a70;
+    }
+
+    nav ul li ul {
+      display: none;
+      position: absolute;
+      background-color: #0077aa;
+      top: 50px;
+      left: 0;
+      min-width: 180px;
+      z-index: 1;
+    }
+
+    nav ul li:hover ul {
+      display: block;
+    }
+
+    nav ul li ul li {
+      width: 100%;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 30px auto;
+      background-color: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #003B5C;
+    }
+
+    .info {
+      margin: 20px 0;
+    }
+
+    .info strong {
+      display: block;
+      margin-top: 10px;
+      font-size: 1.1em;
+    }
+
+    footer {
+      background-color: #003B5C;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+      }
+
+      nav ul li ul {
+        position: static;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Melike Kütüphanesi</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#">Başkanlık</a>
+        <ul>
+          <li><a href="#">Misyon</a></li>
+          <li><a href="#">Vizyon</a></li>
+          <li><a href="#">Organizasyon</a></li>
+        </ul>
+      </li>
+      <li><a href="#">İdari</a>
+        <ul>
+          <li><a href="#">Personel</a></li>
+          <li><a href="#">Birimler</a></li>
+          <li><a href="#">İletişim</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Hizmetler</a></li>
+      <li><a href="#">Veritabanları</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h2>Danışma Hizmetleri</h2>
+    <p>
+      Melike Kütüphanesi, kullanıcılarına bilgiye erişim süreçlerinde rehberlik etmek amacıyla danışma hizmetleri sunmaktadır. Kütüphane materyallerinin kullanımı, veri tabanlarına erişim, kaynak taraması gibi konularda akademik destek sağlanmaktadır.
+    </p>
+    <p>
+      Danışma personelimiz, araştırmalarınız sırasında doğru kaynaklara ulaşabilmeniz için birebir yardım sağlamaktadır. Ayrıca elektronik kaynakların kullanımı ve kütüphane içi yönlendirmeler hakkında bilgi alabilirsiniz.
+    </p>
+
+    <div class="info">
+      <strong>📌 Danışma Masası Çalışma Saatleri</strong>
+      Hafta içi: 09:00 – 17:00<br>
+      Hafta sonu: Kapalı
+
+      <strong>📞 Telefon</strong>
+      (0 312) 000 00 10
+
+      <strong>📧 E-posta</strong>
+      danisma@melike.edu.tr
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Melike Kütüphanesi - Tüm hakları saklıdır.
+  </footer>
+
+</body>
+</html>
